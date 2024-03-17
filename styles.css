@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+  }
+  
+  section {
+    color: rgb(180, 180, 180);
+  }
+  
+  #welcome-section {
+    background: linear-gradient(
+      -20deg, black,
+      rgb(10, 50, 75), 
+      rgb(10, 50, 75), 
+      black
+    );
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hello, .my-name, .web-dev {
+    padding: 5px;
+  }
+  
+  .hello {
+    padding-right: 130px;
+  }
+  
+  .web-dev {
+    padding-left: 100px;
+  }
+  
+  .about-me {
+    padding-top: 100px;
+    padding-right: 300px;
+  }
