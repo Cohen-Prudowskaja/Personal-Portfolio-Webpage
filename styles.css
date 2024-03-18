@@ -7,6 +7,7 @@
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
+  --nav-blue: #45567d;
 }
 
 * {
@@ -26,6 +27,34 @@ html {
   background-color: black;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  padding: 15px;
+  border-top: 4px solid rgb(0, 100, 80);
+  border-bottom: 4px solid rgb(0, 100, 120);
+  width: 100%;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: .5rem 1rem .5rem 1rem;
+  color: var(--nav-blue);
+}
+
+.nav-list a:hover {
+  background: var(--nav-blue);
+  color: grey;
+}
+
 section {
   color: rgb(180, 180, 180);
 }
@@ -43,6 +72,7 @@ section {
     rgb(10, 50, 75), 
     black
   );
+  padding-top: 50px;
 }
 
 .hello, .my-name, .web-dev {
@@ -58,7 +88,7 @@ section {
 }
 
 .about-me {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-right: 300px;
   padding-bottom: 20px;
 }
