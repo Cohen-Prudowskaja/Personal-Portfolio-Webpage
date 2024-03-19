@@ -27,11 +27,41 @@ html {
   background-color: black;
 }
 
+/*
+9. Your portfolio should have at least one media query
+*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/*
+11. The navbar should always be at the top of the viewport
+*/
+
 .nav {
-  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav-list {
@@ -59,13 +89,17 @@ section {
   color: rgb(180, 180, 180);
 }
 
-#welcome-section, #projects {
+/*
+10. The height of the welcome section should be equal to the height of the viewport
+*/
+
+#welcome-section, #projects, #contact {
   justify-content: center;
   text-align: center;
   padding: 20px;
 }
 
-#welcome-section {
+#welcome-section, #contact {
   background: linear-gradient(
     -20deg, black,
     rgb(10, 50, 75), 
@@ -110,7 +144,7 @@ section {
   );
 }
 
-.projects-heading {
+.projects-heading, .contact-heading {
   padding-bottom: 20px;
   padding-top: 20px;
 }
